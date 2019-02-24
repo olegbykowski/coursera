@@ -1,0 +1,57 @@
+h1 {
+  text-align: center;
+  font-size: 1.75em;
+}
+
+section > div {
+  background-color: #D3D3D3;
+  margin: 10px;
+  border: 1px solid black;
+  height: 150px;
+  overflow: auto;
+}
+
+.title{
+  float: right;
+  border: 1px solid black;
+  font-size: 1.25em;
+  text-align: center;
+  width: 25%;
+  padding:0% 5%;
+}
+
+
+p {
+  clear: both;
+}
+
+
+#S1 div .title{
+  background-color: pink;
+}
+#S2 div .title{
+  background-color: #bf0000;
+}
+#S3 div .title{
+  background-color: #ffd360;
+}
+
+/* Desktop */
+@media (min-width: 992px){
+  section {
+    width: 33%;
+    float: left;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px){
+  section {
+    width: 50%;
+    float: left;
+  }
+  #S3 {
+    width: 100%;
+    float: left;
+  }
+}
