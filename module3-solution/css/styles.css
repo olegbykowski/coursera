@@ -1,1 +1,84 @@
+body {
+  font-size: 16px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+}
 
+/** HEADER **/
+#header-nav {
+  background-color: #808080;
+  border-radius: 0;
+  border: 0;
+}
+
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list hr {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-top: 1px solid;
+}
+
+#nav-list a {
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-size: 1.8em;
+
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.row div section {
+  border:  10px 10px 10px 10px;
+  background-color: grey;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a { /* Collapsed nav menu h */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+/********** Super extra small devices Only  (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
